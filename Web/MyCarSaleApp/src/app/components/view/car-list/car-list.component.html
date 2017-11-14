@@ -1,0 +1,28 @@
+<section id="mu-speakers">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="mu-speakers-area">
+
+          <div class="mu-title-area">
+            <h2 class="mu-title">הרכבים שלנו</h2>
+            <p>כל הרכבים נבחרו בקפידה בדגש על איכות מחיר אחריות</p>
+            <p>המטרה שלנו היא לתת ללקוח לדעת שיש לרכב אמא ואבא</p>
+          </div>
+
+          <!-- Start Speakers Content -->
+          <div class="mu-speakers-content">
+
+            <div class="mu-speakers-slider">
+              <li *ngFor="let car of cars"> 
+               <app-car-card-property [Car]="car"></app-car-card-property>
+              </li>
+            </div>
+          </div>
+          <!-- End Speakers Content -->
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

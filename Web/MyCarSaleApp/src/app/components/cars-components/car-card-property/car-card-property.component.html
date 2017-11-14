@@ -1,40 +1,14 @@
-<!--The content below is only a placeholder and can be replaced.-->
-
-
-  <!-- Wide card with share menu button -->
-  <style>
-      .demo-card-wide.mdl-card {
-        width: 400px;
-      }
-      .demo-card-wide > .mdl-card__title {
-  opacity: 0.5;
-        height: 75px;
-        background: url('http://www.autosport.co.il/wp-content/uploads/2014/05/DSC_0125.jpg') center / cover;
-      }
-      .demo-card-wide > .mdl-card__menu {
-        opacity: 0.5;
-      }
-      </style>
-      
-      <div  class="demo-card-wide mdl-card mdl-shadow--2dp">
-        <div class="mdl-card__title">
-          <h2 class="mdl-card__title-text">Welcome</h2>
-        </div>
-        <div class="mdl-card__supporting-text">
-           <p>  דגם: רנו קפצור , שנה 2015, מחיר מחירון : 79,000 ש"ח</p>
-           <p>  הצעות החל מ: 35,000</p>
-          
-        </div>
-        <div class="mdl-card__actions mdl-card--border">
-          <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-          תן הצעה
-          </a>
-        </div>
-        <div class="mdl-card__menu">
-          <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-            <i class="material-icons">share</i>
-          </button>
-        </div>
-      </div>
-  
-  
+<div class="mu-single-speakers">
+  <img src={{Car.imageName}} alt="speaker img">
+  <div class="mu-single-speakers-info">
+    <h3>{{Car.modelName}}</h3>
+    <p>שנת {{Car.modelYear}} מחיר מחירון {{Car.listPrice}} </p>
+    <h3>הצעות החל מ {{Car.lowPrice}}</h3>
+    <ul class="mu-single-speakers-social">
+      <li>
+        <p>לקניה</p>
+        <a href="#">
+          <i class="fa fa-money fa-3x"></i></a></li>
+    </ul>
+  </div>
+</div>
