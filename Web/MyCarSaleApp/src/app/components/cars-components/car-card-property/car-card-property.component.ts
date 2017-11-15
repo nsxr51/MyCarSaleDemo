@@ -7,10 +7,13 @@ import { CarProerty } from './CarProerty';
   styleUrls: ['./car-card-property.component.css']
 })
 export class CarCardPropertyComponent implements OnInit {
+ 
   @Input() Car:CarProerty;
+  
   constructor() { }
    
   ngOnInit() {
+
   }
 
 }

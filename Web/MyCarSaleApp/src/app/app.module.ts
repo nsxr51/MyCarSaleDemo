@@ -7,7 +7,11 @@ import { HeadNavBarComponent } from './components/view/head-nav-bar/head-nav-bar
 import { AboutUsComponent } from './components/view/about-us/about-us.component';
 import { HowItWorksComponent } from './components/view/how-it-works/how-it-works.component';
 import { CarListComponent } from './components/view/car-list/car-list.component';
-
+import { MainViewComponent } from './components/view/main-view/main-view.component';
+import { RouteModule } from './components/routing/route/route.module';
+import { RouteRoutingModule } from './components/routing/route/route-routing.module';
+import { Routes, RouterModule } from '@angular/router';
+import { CarBidPageComponent } from './components/cars-components/car-bid-page/car-bid-page.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -15,14 +19,17 @@ import { CarListComponent } from './components/view/car-list/car-list.component'
     HeadNavBarComponent,
     AboutUsComponent,
     HowItWorksComponent,
-    CarListComponent
+    CarListComponent,
+    MainViewComponent,
+    CarBidPageComponent
   ],
   imports: [
     BrowserModule,
     NoopAnimationsModule,
-     
+    RouteRoutingModule,
+    RouterModule
   ],
-  providers: [],
+  providers: [MainViewComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
