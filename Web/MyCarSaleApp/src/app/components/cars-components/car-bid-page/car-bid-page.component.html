@@ -1,6 +1,14 @@
 
-<div style="padding: 150px;border-style: solid;border: 2px; width: 70%;height:80%;" >
-    <p >
-        car-bid-page works! id: {{id}}
-      </p>
-</div>
+<div style="padding-top: 200px;" class="container">
+    <div class="row">
+        <div class="col col-md-8">
+        <p-galleria [class]="ui-galleria-filmstrip" [images]="images"  frameHeight="100" [showCaption]="false"></p-galleria>
+        </div>
+        <div class="col-6 col-md-4 ui-rtl"  dir="rtl" >
+                <p-dataTable [value]="Car.properties" [loading]="loading">
+                        <p-column field="name" header=""></p-column>
+                        <p-column field="value" header=""></p-column>
+                    </p-dataTable>
+        </div>
+    </div>
+ </div>
